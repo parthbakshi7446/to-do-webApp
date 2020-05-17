@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://use.fontawesome.com/b0db3aa219.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+    <div id="box">
+        <div id="search" class="flex">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <input id="task-input" type="text" style="width:100%" placeholder="type your to-do list">
+            <i id="add-button" class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="flex" style="width: 70%;border-bottom: 1px solid black;">
+            <div style="display: flex;justify-content: flex-start;width: 50%;">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                <a id="all-done">Complete all Tasks</a>
+            </div>
+            <div style="display: flex;justify-content: flex-end;width: 50%;">
+                <a id="clear-complete">Clear Completed</a>
+            </div>
+        </div>
+        <div id="task-list">
+            <ul>
+
+            </ul>
+        </div>
+        <div class="flex" style="width: 70%;border-top: 1px solid black;">
+            <div style="display: flex;justify-content: flex-start;width: 50%;">
+                <span> <span id="task-count">0</span> Tasks Left</span>
+                
+            </div>
+            <div style="display: flex;justify-content: flex-end;width: 50%;">
+                <span id="all"><em>All&nbsp</em></span>
+                <span id="incomplete"><em>Uncomplete&nbsp</em></span>
+                <span id="complete" ><em>Completed</em></span>
+            </div>
+        </div>
+        <div>Click on any task to mark it as completed</div>
+
+    </div>
+    
+    
+</body>
+</html>
